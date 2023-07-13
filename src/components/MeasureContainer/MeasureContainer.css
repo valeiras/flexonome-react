@@ -1,0 +1,42 @@
+.measure-container {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.round-btn {
+  color: var(--grey-800);
+  background-color: white;
+  position: absolute;
+  font-size: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.round-btn:hover:enabled {
+  color: white;
+  background-color: var(--grey-800);
+}
+
+.add-measure-btn {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.add-secondary-btn {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.remove-secondary-btn {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

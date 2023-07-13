@@ -1,0 +1,13 @@
+#bpm-container {
+  max-width: 250px;
+  justify-content: center;
+}
+
+#bpm-text {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.bpm-input {
+  width: 4rem;
+}

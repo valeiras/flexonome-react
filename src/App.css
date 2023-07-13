@@ -1,0 +1,73 @@
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#poly-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 992px) {
+  #poly-container {
+    flex-flow: row nowrap;
+  }
+}
+
+.container {
+  background-color: var(--primary-400);
+  border: var(--border);
+  width: 45vw;
+  border-radius: var(--border-radius);
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+}
+
+/* Remove arrows from input type number
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2px;
+  border: var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:disabled {
+  background-color: gray;
+  color: black;
+  cursor: default;
+}
+
+.outter-measure-container {
+  display: flex;
+  position: relative;
+}

@@ -1,0 +1,37 @@
+.input-container {
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: var(--border-radius);
+  border: var(--border);
+  background-color: #fff;
+  padding-right: 2px;
+}
+
+input {
+  font-size: var(--text-size);
+  text-align: center;
+  border: none;
+  border-radius: var(--border-radius);
+  text-align: right;
+  padding-right: 0.75rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.arrow-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.arrow {
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 2px #ccc);
+}

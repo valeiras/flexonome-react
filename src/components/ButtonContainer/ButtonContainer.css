@@ -1,0 +1,32 @@
+#btn-container {
+  max-width: 250px;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#play-btn,
+#stop-btn {
+  border-radius: var(--border-radius);
+  font-size: 1.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+#play-btn:enabled {
+  color: green;
+  background-color: white;
+}
+
+#play-btn:hover:enabled {
+  background-color: green;
+  color: white;
+}
+
+#stop-btn:enabled {
+  color: red;
+}
+
+#stop-btn:hover:enabled {
+  background-color: red;
+  color: white;
+}
